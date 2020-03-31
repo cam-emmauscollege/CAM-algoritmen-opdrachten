@@ -10,16 +10,12 @@
 function isPositief(getal) {
   var teruggeefWaarde = false;
 
-  
+  if (getal >= 0) {
+      teruggeefWaarde = true;
+  }
   
 
   return teruggeefWaarde;
 }
 
-
-console.log("Is 5 een positief getal?");
-console.log(isPositief(5));
-console.log("Is -9 een positief getal?");
-console.log(isPositief(-9));
-console.log("Is 0 een positief getal?");
-console.log(isPositief(0));
+exports.isPositief = isPositief;
