@@ -14,10 +14,12 @@
 
     <script class="mocha-init">
       mocha.setup('bdd');
-      mocha.checkLeaks();
     </script>
+    <script src="opdracht-1.js"></script>
+    <script src="opdracht-2.js"></script>
     <script src="test.js"></script>
     <script class="mocha-exec">
+      mocha.checkLeaks();
       mocha.run();
     </script>
   </body>
